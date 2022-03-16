@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<div class="mx-auto" style="width: 300px;">
+    <h1 style="center"> Stopień i zakres </h1>
+</div>
+{% endblock %}
+
+{% block body %}
+<form method="POST">
+    <div class="mx-auto" style="width: 200px;">
+        <text>Podaj stopień wielomianu: </text>
+        <input name="stopien" type="number" width='20' required> <br><br>
+        <text>Podaj x_min:</text>
+        <input name="x_min" type="number" width='20' required> <br><br>
+        <text>Podaj x_max:</text>
+        <input name="x_max" type="number" width='20' required><br><br>
+        <input type="submit" >
+    </div>
+</form>
+{% endblock %}
